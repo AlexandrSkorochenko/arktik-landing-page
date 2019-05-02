@@ -1,13 +1,332 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Arktik</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
-  </head>
-  <body>
-    hello
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+
+<head>
+  <title>Arktik</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrap">
+        <a href="#" class="header-logo">
+          <img src="./img/logo.png" alt="Arktik logo" class="header-logo__img">
+          <span class="header-logo__text">Ремонт бытовой техники в Алматы</span>
+        </a>
+        <div class="header-info">
+          <div class="header-info__work-hours">
+            <span class="bold">Режим работы:</span>
+            с 8:00 до 21:00. Без выходных
+          </div>
+          <a href="#" class="header-info__phone header-info__phone--whatsapp">+7 (705) 775 7218</a>
+          <a href="#" class="header-info__phone">+7 (727) 327 3851</a>
+          <a href="#" class="header-info__phone">+7 (775) 059 4715</a>
+          <button class="button header-info__button">Вам перезвонить?</button>
+        </div>
+      </div>
+    </div>
+    <div class="header__bott">
+      <div class="wrap">
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="#" class="nav__link active">Ремонт бытовой техники</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Ремонт холодильников</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Ремонт стиральных машин</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Корпоративным клиентам</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="top-banner">
+    <div class="wrap">
+      <div class="top-banner__left">
+        <h1 class="top-banner__title">РЕМОНТ БЫТОВОЙ ТЕХНИКИ НА ДОМУ В АЛМАТЫ</h1>
+        <ul class="top-banner__list">
+          <li class="top-banner__list-item">ВСЕГО ОТ 1000 ТГ.</li>
+          <li class="top-banner__list-item">С ГАРАНТИЕЙ НА 12 МЕСЯЦЕВ</li>
+          <li class="top-banner__list-item">РЕМОНТ ВСЕГО ОТ 15 МИНУТ</li>
+        </ul>
+      </div>
+      <div class="top-banner__right">
+        <form action="" class="banner-form">
+          <p class="banner-form__text">
+            <span class="banner-form__text-bold">Получите выезд мастера и диагностику вашей техники</span>
+            <span class="banner-form__text-blue">Бесплатно</span>
+            <span class="banner-form__text-light">Мы перезвоним в течении 5 минут, чтобы согласовать удобное вам время
+              визита.</span>
+          </p>
+          <div class="banner-form__fields">
+            <div class="banner-form__field field">
+              <label for="fix-type">Что у вас сломалось? <span class="required">*</span></label>
+              <select name="fix-type" id="fix-type" required>
+                <option value="" disabled selected>Выберите вариант</option>
+                <option value="opt1">Вариант 1</option>
+                <option value="opt2">Вариант 2</option>
+                <option value="opt3">Вариант 3</option>
+              </select>
+            </div>
+            <div class="banner-form__field field">
+              <label for="tel">Введите ваш телефон <span class="required">*</span></label>
+              <input class="field__input field__input--tel" type="tel" name="tel" id="tel"
+                placeholder="+7 (7__) ___ ____" required>
+            </div>
+            <div class="banner-form__field field">
+              <div class="captcha"></div>
+            </div>
+            <button type="submit" class="button banner-form__button">
+              ВЫЗВАТЬ МАСТЕРА БЕСПЛАТНО
+            </button>
+            <p class="banner-form__safe">
+              <span>Гарантируем безопасность ваших данных</span>
+            </p>
+          </div>
+        </form>
+        <img src="./img/man_1.png" alt="man" class="banner-man">
+      </div>
+    </div>
+  </section>
+  <section class="why-we">
+    <div class="wrap">
+      <h2 class="section-title">Нам доверили ремонт техники уже больше 7630 клиентов в Алматы и вот почему:</h2>
+      <div class="why-we-items">
+        <div class="why-we-item" style="background-image: url(./img/icon_1.svg)">
+          <p class="why-we-item__text">
+            <span class="blue-color">Приедем в течении часа</span>, в удобное для вас время, даже в выходные
+          </p>
+        </div>
+        <div class="why-we-item" style="background-image: url(./img/icon_2.svg)">
+          <p class="why-we-item__text">
+            <span class="blue-color">Ремонт с первого выезда</span> мастера
+          </p>
+        </div>
+        <div class="why-we-item" style="background-image: url(./img/icon_3.svg)">
+          <p class="why-we-item__text">
+            95% поломок <span class="blue-color">чиним на дому</span>
+          </p>
+        </div>
+        <div class="why-we-item" style="background-image: url(./img/icon_4.svg)">
+          <p class="why-we-item__text">
+            Если ремонт нужно провести в мастерской – <span class="blue-color">отвезем технику за наш счет</span>
+          </p>
+        </div>
+        <div class="why-we-item" style="background-image: url(./img/icon_5.svg)">
+          <p class="why-we-item__text">
+            Надежные и <span class="blue-color">оригинальные запчасти</span>
+          </p>
+        </div>
+        <div class="why-we-item" style="background-image: url(./img/icon_6.svg)">
+          <p class="why-we-item__text">
+            Дружелюбные и <span class="blue-color">аккуратные мастера</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="prices">
+    <div class="wrap">
+      <h2 class="section-title">Самые низкие цены на ремонт бытовой техники в Алматы</h2>
+      <div class="prices-cards">
+        <div class="price-card">
+          <div class="price-card__top">
+            <img src="./img/img_1.jpg" alt="РЕМОНТ ХОЛОДИЛЬНИКОВ">
+            <p class="price-card__name">РЕМОНТ ХОЛОДИЛЬНИКОВ</p>
+          </div>
+          <div class="price-card__bottom">
+            <div class="price-card__info">
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Выезд мастера</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Диагностика</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+            </div>
+            <p class="price-card__price">от <span class="bold">1000</span> тг. до <span class="bold">15 000</span> тг.
+            </p>
+            <button class="button price-card__button">
+              ВЫЗВАТЬ МАСТЕРА БЕСПЛАТНО
+            </button>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="price-card__top">
+            <img src="./img/img_2.jpg" alt="РЕМОНТ КОНДИЦИОНЕРОВ">
+            <p class="price-card__name">РЕМОНТ КОНДИЦИОНЕРОВ</p>
+          </div>
+          <div class="price-card__bottom">
+            <div class="price-card__info">
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Выезд мастера</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Диагностика</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+            </div>
+            <p class="price-card__price">от <span class="bold">1000</span> тг. до <span class="bold">15 000</span> тг.
+            </p>
+            <button class="button price-card__button">
+              ВЫЗВАТЬ МАСТЕРА БЕСПЛАТНО
+            </button>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="price-card__top">
+            <img src="./img/img_3.jpg" alt="РЕМОНТ СТИРАЛЬНЫХ МАШИН">
+            <p class="price-card__name">РЕМОНТ СТИРАЛЬНЫХ МАШИН</p>
+          </div>
+          <div class="price-card__bottom">
+            <div class="price-card__info">
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Выезд мастера</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Диагностика</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+            </div>
+            <p class="price-card__price">от <span class="bold">1000</span> тг. до <span class="bold">15 000</span> тг.
+            </p>
+            <button class="button price-card__button">
+              ВЫЗВАТЬ МАСТЕРА БЕСПЛАТНО
+            </button>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="price-card__top">
+            <img src="./img/img_4.jpg" alt="РЕМОНТ ПЕЧЕЙ И МИКРОВОЛНОВОК">
+            <p class="price-card__name">РЕМОНТ ПЕЧЕЙ И МИКРОВОЛНОВОК</p>
+          </div>
+          <div class="price-card__bottom">
+            <div class="price-card__info">
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Выезд мастера</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Диагностика</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+            </div>
+            <p class="price-card__price">от <span class="bold">1000</span> тг. до <span class="bold">15 000</span> тг.
+            </p>
+            <button class="button price-card__button">
+              ВЫЗВАТЬ МАСТЕРА БЕСПЛАТНО
+            </button>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="price-card__top">
+            <img src="./img/img_5.jpg" alt="РЕМОНТ ТЕЛЕВИЗОРОВ">
+            <p class="price-card__name">РЕМОНТ ТЕЛЕВИЗОРОВ</p>
+          </div>
+          <div class="price-card__bottom">
+            <div class="price-card__info">
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Выезд мастера</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Диагностика</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+            </div>
+            <p class="price-card__price">от <span class="bold">1000</span> тг. до <span class="bold">15 000</span> тг.
+            </p>
+            <button class="button price-card__button">
+              ВЫЗВАТЬ МАСТЕРА БЕСПЛАТНО
+            </button>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="price-card__top">
+            <img src="./img/img_6.jpg" alt="РЕМОНТ ПОСУДОМОЕЧНЫХ МАШИН">
+            <p class="price-card__name">РЕМОНТ ПОСУДОМОЕЧНЫХ МАШИН</p>
+          </div>
+          <div class="price-card__bottom">
+            <div class="price-card__info">
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Выезд мастера</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Диагностика</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+            </div>
+            <p class="price-card__price">от <span class="bold">1000</span> тг. до <span class="bold">15 000</span> тг.
+            </p>
+            <button class="button price-card__button">
+              ВЫЗВАТЬ МАСТЕРА БЕСПЛАТНО
+            </button>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="price-card__top">
+            <img src="./img/img_7.jpg" alt="РЕМОНТ КОФЕМАШИН">
+            <p class="price-card__name">РЕМОНТ КОФЕМАШИН</p>
+          </div>
+          <div class="price-card__bottom">
+            <div class="price-card__info">
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Выезд мастера</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Диагностика</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+            </div>
+            <p class="price-card__price">от <span class="bold">1000</span> тг. до <span class="bold">15 000</span> тг.
+            </p>
+            <button class="button price-card__button">
+              ВЫЗВАТЬ МАСТЕРА БЕСПЛАТНО
+            </button>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="price-card__top">
+            <img src="./img/img_8.jpg" alt="РЕМОНТ МЕЛКОЙ БЫТОВОЙ ТЕХНИКИ">
+            <p class="price-card__name">РЕМОНТ МЕЛКОЙ БЫТОВОЙ ТЕХНИКИ</p>
+          </div>
+          <div class="price-card__bottom">
+            <div class="price-card__info">
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Выезд мастера</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+              <p class="pc-info-item">
+                <span class="pc-info-item__des">Диагностика</span>
+                <span class="pc-info-item__price">БЕСПЛАТНО</span>
+              </p>
+            </div>
+            <p class="price-card__price">от <span class="bold">1000</span> тг. до <span class="bold">15 000</span> тг.
+            </p>
+            <button class="button price-card__button">
+              ВЫЗВАТЬ МАСТЕРА БЕСПЛАТНО
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
