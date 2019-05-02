@@ -495,3 +495,153 @@ body {
   height: 40px;
   width: 100%;
 }
+
+.reviews {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.review-img {
+  width: 530px;
+  height: 580px;
+}
+
+.review-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.review-info {
+  width: 700px;
+  border-radius: 6px;
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  margin-left: -90px;
+}
+
+.review-info__top {
+  padding: 30px 30px 0;
+  box-sizing: border-box;
+}
+
+.review-info__title {
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  font-size: 35px;
+  font-weight: 800;
+  margin: 0;
+  color: #242424;
+}
+
+.review-info__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.review-info__item {
+  width: 284px;
+  margin-bottom: 20px;
+}
+
+.review-info__item-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: 0.2px;
+  color: #0174df;
+  margin: 0;
+}
+
+.review-info__item-text {
+  line-height: 1.19;
+  letter-spacing: 0.2px;
+  color: #242424;
+  margin: 0;
+}
+
+.review-info__bottom {
+  background-color: #f3f3f3;
+  border-top: 2px solid #dbdbdb;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 0 0 6px 6px;
+}
+
+.review-info__bottom-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: 0.2px;
+  color: #0174df;
+  margin: 0;
+}
+
+.review-info__bottom-text {
+  line-height: 1.19;
+  letter-spacing: 0.2px;
+  color: #242424;
+  margin: 0;
+}
+
+.client-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.client-info__text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: 0.2px;
+  margin-right: 10px;
+}
+
+.reviews-slider .client-info img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.reviews-slider-navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px; 
+}
+
+.reviews-slider-navigation__content {
+  position: relative;
+  bottom: 25px;
+  z-index: 1;
+}
+
+.reviews-slider-navigation__btn {
+  border: none;
+  background-color: transparent;
+  color: #0174df;
+  font-size: 25px;
+}
+
+.reviews-slider-navigation__btn:disabled {
+  opacity: .3;
+}
+
+.reviews-slider-navigation__text {
+  opacity: 0.26;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: 0.2px;
+  padding: 0 20px;
+  position: relative;
+  bottom: 3px;
+}
