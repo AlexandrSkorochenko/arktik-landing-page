@@ -830,6 +830,7 @@ body {
   color: #aaaaaa;
   line-height: 1.14;
   margin-top: 5px;
+  min-height: 30px;
 }
 
 .master__years {

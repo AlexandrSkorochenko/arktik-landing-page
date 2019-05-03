@@ -35,6 +35,15 @@ function initReviewsSlider() {
     });
 }
 
+function initMastersSlider() {
+    $('.masters').owlCarousel({
+        items: 4,
+        dots: false,
+        loop: true,
+        autoplay: true
+    })
+}
+
 function initCapture() {
     var firstNum = getRandomInt(1, 10);
     var secondNum = getRandomInt(1, 10);
@@ -117,11 +126,17 @@ function initMobileNav() {
     });
 }
 
+function initMasks() {
+    $('.field__input--tel').inputmask({"mask": "+7 (799) 999 9999"})
+}
+
 $(document).ready(function(){
     initReviewsSlider();
     initCapture();
     initModalBox();
     initStikyHeader();
     initMobileNav();
+    initMasks();
+    initMastersSlider();
     // initNumbers();
 });
