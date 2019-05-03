@@ -1146,3 +1146,8 @@ body {
 .mobile-menu-btn {
   display: none;
 }
+
+.g-recaptcha {
+  margin-bottom: 7px;
+  transform: scale(0.92) translate(-11px);
+}
