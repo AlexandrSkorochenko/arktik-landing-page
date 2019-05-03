@@ -203,6 +203,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   height: 100%;
+  overflow: hidden;
 }
 
 .top-banner__left {
@@ -1140,4 +1141,8 @@ body {
 
 .page-content--fixed-header {
   margin-top: 98px;
+}
+
+.mobile-menu-btn {
+  display: none;
 }
