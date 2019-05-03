@@ -95,13 +95,16 @@ function initModalBox() {
 }
 
 function initStikyHeader () {
+    var pageContent = $('.page-content');
+    
     $( window ).scroll(function() {
         if($( window ).scrollTop() == 0) $('.header').css('display','');
         if ($( window ).scrollTop() > 650){
 
             $('.header').addClass('header--fixed').fadeIn();
+            pageContent.addClass('page-content--fixed-header');
         } else {
-
+            pageContent.removeClass('page-content--fixed-header');
             $('.header').removeClass('header--fixed');
         }
     });
